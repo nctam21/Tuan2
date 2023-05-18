@@ -1,6 +1,7 @@
 package com.example.Tuan2.Controller;
 
 import com.example.Tuan2.entity.Book;
+import com.example.Tuan2.entity.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,7 +15,7 @@ import java.util.List;
 @RequestMapping("/")
 public class homeController {
     @Autowired
-    private List<Book> books;
+    private List<Product> products;
 
     @GetMapping
     public String home(){
